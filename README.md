@@ -30,38 +30,38 @@ Then we concatenate the data frames for other companies and export it as csv. Th
 
 ## SENTIMENT ANALYSIS
 
-Importing the dataset obtained after scraping project – dataset.csv
+- Importing the dataset obtained after scraping project – dataset.csv
 
-View the dataset to get basic insights – shape, descriptive statistics, dataset head
+- View the dataset to get basic insights – shape, descriptive statistics, dataset head
 
-Add a column of ‘text length’ for each review to check if it can be a helpful feature for our model
+- Add a column of ‘text length’ for each review to check if it can be a helpful feature for our model
 
-For better decision-making visualize the distribution of text-length for each rating using histograms and box-plots
+- For better decision-making visualize the distribution of text-length for each rating using histograms and box-plots
 
-Create a new dataset which contains data only with rating ‘1’ (negative) or ‘5’ (positive)
+- Create a new dataset which contains data only with rating ‘1’ (negative) or ‘5’ (positive)
 
 Text Pre-processing
 
-Convert the ratings into binary format : Rating 5="1" , Rating 1="0“ using label encoder
+- Convert the ratings into binary format : Rating 5="1" , Rating 1="0“ using label encoder
 
-Using regular expressions replace text like email addresses with ‘emailaddr’ and similarly for others
+- Using regular expressions replace text like email addresses with ‘emailaddr’ and similarly for others
 
-Remove stopwords and then lemmatize each review text
+- Remove stopwords and then lemmatize each review text
 
-Find the most common and rare words
+- Find the most common and rare words
 
-Create a new dataset with the processed reviews and corresponding encoded rating for feature extraction
+- Create a new dataset with the processed reviews and corresponding encoded rating for feature extraction
 
 Feature Engineering
 
-Use Vader to find the polarity score for each review of our pre-processed dataset
+- Use Vader to find the polarity score for each review of our pre-processed dataset
 
-Adding ‘word-count’ & ‘character-count’ columns to the dataset to see the reduction in dataset
+- Adding ‘word-count’ & ‘character-count’ columns to the dataset to see the reduction in dataset
 
-Add TF-IDF columns for every word and document
+- Add TF-IDF columns for every word and document
 
-Print the wordcloud from available reviews
+- Print the wordcloud from available reviews
 
-Find the highest sentiment positive reviews
+- Find the highest sentiment positive reviews
 
-Plot sentiment distribution for positive and negative reviews
+- Plot sentiment distribution for positive and negative reviews
